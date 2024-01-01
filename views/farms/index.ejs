@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shoppingFarms</title>
+    
+</head>
+<body>
+    <h1>Shopping List</h1><hr>
+  <ol> <% for(let far of farm) { %>
+    <li><a href="/farm/<%=far._id%>"><%= far.name %></a> </li>
+    <% }%>
+  </ol>
+  <a href="farm/new">Add New farm</a>
+</body>
+</html>

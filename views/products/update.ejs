@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update <%= product.name %> </title>
+</head>
+<body>
+    <h1>Update <%= product.name %></h1>
+    <form action="/product/<%= product._id%>?_method=PUT" method="POST">
+        <label>Name
+            <input type="text" name="name" placeholder="name" value="<%=product.name%>"></label>
+        <label>Price
+                <input type="number" name="Price" placeholder="Price" value="<%=product.price%>"></label>
+        <select name="cateogary">
+               <% for(let cateogay of cateogaries) { %>
+                <option for
+               }
+        </select>    
+        <button>submit</button>
+    </form>
+</body>
+</html>
